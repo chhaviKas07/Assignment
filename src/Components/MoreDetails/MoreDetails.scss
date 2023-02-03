@@ -1,0 +1,27 @@
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  .image-box {
+    margin: 20px;
+    text-align: center;
+    
+    .card {
+      border: 1px solid lightgray;
+      box-shadow: 1px 1px 5px gray;
+      
+      .list-group-flush {
+        li {
+          border: none;
+          background-color: lightgray;
+          
+          &:nth-child(odd) {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
